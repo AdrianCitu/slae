@@ -1,11 +1,12 @@
 ; helloNoNull.asm 
 ; Author: citu_adrian@yahoo.com
 ; Description: Dummy shellcode with no null bytes
+; Website: 	itblog.adrian.citu.name
 
 global _start
 section .text
 _start:
-	; print hello world on the screen
+	;execute write(int fd, const void *buf, size_t count); 
 	xor eax, eax
 	mov al, 0x4
 	
@@ -19,7 +20,7 @@ _start:
 	int 0x80
 
 
-	; exit the program gracefully
+	;execute _exit(0);
 	xor eax, eax
 	mov al, 0x1
 	

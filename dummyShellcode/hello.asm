@@ -1,6 +1,7 @@
 ; hello.asm 
 ; Author: citu_adrian@yahoo.com
 ; Description: Dummy shellcode
+; Website: 	itblog.adrian.citu.name
 
 global _start
 
