@@ -7,7 +7,6 @@
 int main( int argc, char *argv[] ) {
    int serverSocketFileDescriptor;
    int clientSocketFileDescriptor; 
-   //int portno;
    int clilen;
    struct sockaddr_in serv_addr;
    struct sockaddr_in cli_addr;
@@ -18,11 +17,10 @@ int main( int argc, char *argv[] ) {
    
    /* Initialize socket structure */
    bzero((char *) &serv_addr, sizeof(serv_addr));
-   //portno = 5001;
    
    serv_addr.sin_family = AF_INET;
    serv_addr.sin_addr.s_addr = INADDR_ANY;
-   serv_addr.sin_port = htons(5001);
+   serv_addr.sin_port = htons(65535);
    
    /* Now bind the host address using bind() call.*/
    bind(serverSocketFileDescriptor, (struct sockaddr *) &serv_addr, sizeof(serv_addr));
