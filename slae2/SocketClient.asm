@@ -1,4 +1,4 @@
-; Filename: SocketServer.nasm
+; Filename: SocketClient.nasm
 ; Author:  citu_adrian@yahoo.com
 ; Website: 	itblog.adrian.citu.name
 
