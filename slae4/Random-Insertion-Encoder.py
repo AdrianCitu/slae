@@ -24,15 +24,15 @@ returnValue = ""
 x =0
 while x < len(shellBytes):
 	randomNumber = random.randint(1,9)
-	#randomNumber = 5;
-	randonNumberInHex = '\\x%02x' % randomNumber
+	#randomNumber = 2;
+	randonNumberInHex = '0x%02x,' % randomNumber
 	returnValue += randonNumberInHex
 	for y in range(x,  x + randomNumber):
 		if y < len(shellBytes):
-			returnValue += '\\x%02x' % shellBytes[y]
+			returnValue += '0x%02x,' % shellBytes[y]
 			x=x+1
 
-terminal = '\\x%02x' % -1
+terminal = '0x%02x' %255 
 returnValue += terminal
 
 print 'Encoded shellcode ...'
