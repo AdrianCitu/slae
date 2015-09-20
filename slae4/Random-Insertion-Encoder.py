@@ -11,7 +11,7 @@
 # value and the consequent number of elements from the original shellcode
 # are copied. 
 #
-#This algorithm is continued until all the elements from
+# This algorithm is continued until all the elements from
 # the original shellcode have been copied in the returnvalue.
 #
 # The last element is a well defined terminator.

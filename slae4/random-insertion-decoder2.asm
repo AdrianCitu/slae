@@ -1,4 +1,4 @@
-; Filename: random-insertion-decoder.asm
+; Filename: random-insertion-decoder2.asm
 ; Author: citu_adrian@yahoo.com
 ; Website: itblog.adrian.citu.name
 
@@ -56,7 +56,10 @@ decoder:
        lodsb
        stosb
        
+       ;one more byte of the block had been copied
+       ;so increment the counter
        inc dl
+       
        ;check that all the bytes of the block
        ;have been copied;
        ;cl contains the first byte of the block
